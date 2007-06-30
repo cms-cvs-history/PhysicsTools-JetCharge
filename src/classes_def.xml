@@ -1,0 +1,8 @@
+<lcgdict>
+	<class name="reco::JetChargePair"/>
+	<class name="reco::JetChargeCollection"/>
+	<class name="edm::Wrapper<reco::JetChargeCollection>" />
+        <class name="edm::RefToBase<reco::Jet>" />
+        <class name="edm::reftobase::BaseHolder<reco::Jet>" />
+        <class name="edm::reftobase::Holder<reco::Jet,reco::CaloJetRef>" />
+</lcgdict>

@@ -2,5 +2,5 @@
 <use name=DataFormats/JetReco>
 <use name=DataFormats/BTauReco>
 <library file="*.cc" name=PhysicsToolsJetChargePlugins>
-        <flags EDM_PLUGIN=1>
+        <flags SEALPLUGIN=1>
 </library>

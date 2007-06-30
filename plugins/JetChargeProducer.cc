@@ -1,4 +1,5 @@
 #include "PhysicsTools/JetCharge/plugins/JetChargeProducer.h"
+#include "DataFormats/JetReco/interface/CaloJet.h"
 
 JetChargeProducer::JetChargeProducer(const edm::ParameterSet &cfg) :
 src_(cfg.getParameter<edm::InputTag>("src")),
@@ -15,8 +16,9 @@ void JetChargeProducer::produce(edm::Event &iEvent, const edm::EventSetup &iSetu
     std::auto_ptr<reco::JetChargeCollection> ret(new reco::JetChargeCollection());
     ret->reserve(hJTAs->size());
     for (IT it = hJTAs->begin(), ed = hJTAs->end(); it != ed; ++it) {
-        const JetRef &jet = it->first;
-        const reco::TrackRefVector &tracks = it->second;
+        const reco::CaloJetRef &cj = it->key;
+        const JetRef jet(cj);
+        const reco::TrackRefVector &tracks = it->val;
         float  val = static_cast<float>( algo_.charge(jet->p4(), tracks) );
         ret->push_back(reco::JetChargePair(jet, val));
     }

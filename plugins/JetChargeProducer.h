@@ -8,11 +8,7 @@
 #include "DataFormats/BTauReco/interface/JetTracksAssociation.h"
 
 #include "PhysicsTools/JetCharge/interface/JetCharge.h"
-
-namespace reco {
-     typedef std::vector<std::pair<edm::RefToBase<Jet>, float>  > JetChargeCollection;
-     typedef JetChargeCollection::value_type JetChargePair;    
-}
+#include "PhysicsTools/JetCharge/interface/dataformats.h"
 
 class JetChargeProducer : public edm::EDProducer {
     public:

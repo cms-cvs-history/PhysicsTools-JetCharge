@@ -3,6 +3,7 @@
 <use name=DataFormats/Math>
 <use name=DataFormats/TrackReco>
 <use name=DataFormats/Candidate>
+<use name=DataFormats/JetReco>
 <export>
     <lib name=PhysicsToolsJetCharge>
     <use name=FWCore/Framework>
