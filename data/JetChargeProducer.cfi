@@ -1,0 +1,5 @@
+module jetChargeProducer = JetChargeProducer {
+	InputTag src = jetTracksAssociator
+	double exp = 1.0
+	string var = "Pt"
+}
