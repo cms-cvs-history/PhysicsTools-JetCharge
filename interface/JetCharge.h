@@ -21,6 +21,7 @@ public:
 	typedef math::XYZTLorentzVector  LorentzVector;
 	typedef math::XYZVector          Vector;
 
+	JetCharge() : var_(Pt), exp_(1.0) { }
 	JetCharge(Variable var, double exponent=1.0) : var_(var), exp_(exponent) { }
 	JetCharge(const edm::ParameterSet &iCfg) ;
 
