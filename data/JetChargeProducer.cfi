@@ -1,5 +1,0 @@
-module jetChargeProducer = JetChargeProducer {
-	InputTag src = ic5JetTracksAssociatorAtVertex
-	double exp = 1.0
-	string var = "Pt"
-}
