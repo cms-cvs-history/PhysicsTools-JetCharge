@@ -5,7 +5,6 @@
 <use name=FWCore/ParameterSet>
 <use name=DataFormats/JetReco>
 <use name=PhysicsTools/JetCharge>
-<use name=RecoBTag/MCTools>
 <use name=PhysicsTools/UtilAlgos>
 <use name=root>
 <library file=JetChargeAnalyzer.cc name=JetChargeAnalyzer>
