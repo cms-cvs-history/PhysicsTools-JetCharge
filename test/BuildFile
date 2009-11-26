@@ -8,6 +8,5 @@
 <use name=PhysicsTools/UtilAlgos>
 <use name=root>
 <library file=JetChargeAnalyzer.cc name=JetChargeAnalyzer>
-  <use name=FWCore/Framework>
   <flags EDM_PLUGIN=1>
 </library>
