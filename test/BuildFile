@@ -5,7 +5,7 @@
 <use name=FWCore/ParameterSet>
 <use name=DataFormats/JetReco>
 <use name=PhysicsTools/JetCharge>
-<use name=PhysicsTools/UtilAlgos>
+<use name=CommonTools/UtilAlgos>
 <use name=root>
 <library file=JetChargeAnalyzer.cc name=JetChargeAnalyzer>
   <flags EDM_PLUGIN=1>
